@@ -44,4 +44,11 @@ form.addEventListener("submit", (event) => {
         hobbyInput.focus();
         return;
     }
+
+    userInfo.innerHTML = `
+        <p><strong>Имя:</strong> ${name}</p>
+        <p><strong>Возраст:</strong> ${age}</p>
+        <p><strong>Город:</strong> ${city}</p>
+        <p><strong>Хобби:</strong> ${hobby}</p>
+    `;
 });
