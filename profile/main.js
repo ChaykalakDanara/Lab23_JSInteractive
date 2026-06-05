@@ -52,3 +52,12 @@ form.addEventListener("submit", (event) => {
         <p><strong>Хобби:</strong> ${hobby}</p>
     `;
 });
+
+clearBtn.addEventListener("click", () => {
+    nameInput.value = "";
+    ageInput.value = "";
+    cityInput.value = "";
+    hobbyInput.value = "";
+    userInfo.innerHTML = "";
+    nameInput.focus();
+});
